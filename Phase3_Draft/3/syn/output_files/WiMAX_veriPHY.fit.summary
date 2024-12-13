@@ -1,0 +1,20 @@
+Fitter Status : Successful - Thu Dec 12 15:07:21 2024
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : WiMAX_veriPHY
+Top-level Entity Name : wimax_top_wrapper
+Family : Cyclone V
+Device : 5CEBA4F23C7
+Timing Models : Final
+Logic utilization (in ALMs) : 258 / 18,480 ( 1 % )
+Total registers : 248
+Total pins : 8 / 224 ( 4 % )
+Total virtual pins : 0
+Total block memory bits : 704 / 3,153,920 ( < 1 % )
+Total RAM Blocks : 3 / 308 ( < 1 % )
+Total DSP Blocks : 0 / 66 ( 0 % )
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 1 / 4 ( 25 % )
+Total DLLs : 0 / 4 ( 0 % )

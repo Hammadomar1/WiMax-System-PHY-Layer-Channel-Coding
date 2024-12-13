@@ -1,0 +1,390 @@
+Power Analyzer report for WiMAX_veriPHY
+Fri Dec  6 16:04:26 2024
+Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Parallel Compilation
+  3. Power Analyzer Summary
+  4. Power Analyzer Settings
+  5. Indeterminate Toggle Rates
+  6. Power Analyzer Simulation Files Read
+  7. Operating Conditions Used
+  8. Thermal Power Dissipation by Block
+  9. Thermal Power Dissipation by Block Type
+ 10. Thermal Power Dissipation by Hierarchy
+ 11. Core Dynamic Thermal Power Dissipation by Clock Domain
+ 12. Current Drawn from Voltage Supplies Summary
+ 13. VCCIO Supply Current Drawn by I/O Bank
+ 14. VCCIO Supply Current Drawn by Voltage
+ 15. VCCPD Supply Current Drawn by I/O Bank
+ 16. VCCPD Supply Current Drawn by Voltage
+ 17. Confidence Metric Details
+ 18. Signal Activities
+ 19. Power Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2023  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.21        ;
+; Maximum used               ; 6           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   4.3%      ;
+;     Processor 3            ;   4.3%      ;
+;     Processor 4            ;   4.3%      ;
+;     Processor 5            ;   4.3%      ;
+;     Processor 6            ;   4.3%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------+
+; Power Analyzer Summary                                                                    ;
++----------------------------------------+--------------------------------------------------+
+; Power Analyzer Status                  ; Successful - Fri Dec  6 16:04:26 2024            ;
+; Quartus Prime Version                  ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition   ;
+; Revision Name                          ; WiMAX_veriPHY                                    ;
+; Top-level Entity Name                  ; WiMAX_PHY_top_verify                             ;
+; Family                                 ; Cyclone V                                        ;
+; Device                                 ; 5CEBA4F23C7                                      ;
+; Power Models                           ; Final                                            ;
+; Total Thermal Power Dissipation        ; 216.44 mW                                        ;
+; Core Dynamic Thermal Power Dissipation ; 15.24 mW                                         ;
+; Core Static Thermal Power Dissipation  ; 197.75 mW                                        ;
+; I/O Thermal Power Dissipation          ; 3.45 mW                                          ;
+; Power Estimation Confidence            ; Low: user provided insufficient toggle rate data ;
++----------------------------------------+--------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Power Analyzer Settings                                                                                                  ;
++------------------------------------------------------------------+---------------------------------------+---------------+
+; Option                                                           ; Setting                               ; Default Value ;
++------------------------------------------------------------------+---------------------------------------+---------------+
+; Use smart compilation                                            ; Off                                   ; Off           ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                                    ; On            ;
+; Enable compact report table                                      ; Off                                   ; Off           ;
+; Default Power Input I/O Toggle Rate                              ; 12.5%                                 ; 12.5%         ;
+; Use Input Files                                                  ; On                                    ; Off           ;
+; Preset Cooling Solution                                          ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ;               ;
+; Board thermal model                                              ; None (CONSERVATIVE)                   ;               ;
+; Default Power Toggle Rate                                        ; 12.5%                                 ; 12.5%         ;
+; Use vectorless estimation                                        ; On                                    ; On            ;
+; Filter Glitches in VCD File Reader                               ; On                                    ; On            ;
+; Power Analyzer Report Signal Activity                            ; Off                                   ; Off           ;
+; Power Analyzer Report Power Dissipation                          ; Off                                   ; Off           ;
+; Device Power Characteristics                                     ; TYPICAL                               ; TYPICAL       ;
+; Automatically Compute Junction Temperature                       ; On                                    ; On            ;
+; Specified Junction Temperature                                   ; 25                                    ; 25            ;
+; Ambient Temperature                                              ; 25                                    ; 25            ;
+; Use Custom Cooling Solution                                      ; Off                                   ; Off           ;
+; Board Temperature                                                ; 25                                    ; 25            ;
+; Enable HPS                                                       ; Off                                   ; Off           ;
+; Processor Frequency                                              ; 0.0                                   ; 0.0           ;
++------------------------------------------------------------------+---------------------------------------+---------------+
+
+
++----------------------------------------------------+
+; Indeterminate Toggle Rates                         ;
++----------------------+-----------------------------+
+; Node                 ; Reason                      ;
++----------------------+-----------------------------+
+; reset_N~inputCLKENA0 ; No valid clock domain found ;
++----------------------+-----------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Power Analyzer Simulation Files Read                                                                                     ;
++---------+---------------------+-----------+-----------------------+----------------+--------------+-----------+----------+
+; File ID ; File Name           ; File Type ; Entity                ; VCD Start Time ; VCD End Time ; Unknown % ; Toggle % ;
++---------+---------------------+-----------+-----------------------+----------------+--------------+-----------+----------+
+; f1      ; ../netlist/dump.vcd ; VCD       ; |WiMAX_PHY_top_verify ; N/A            ; N/A          ; 0.0%      ; 79.7%    ;
++---------+---------------------+-----------+-----------------------+----------------+--------------+-----------+----------+
+
+
++-------------------------------------------------------------------------+
+; Operating Conditions Used                                               ;
++---------------------------------------------+---------------------------+
+; Setting                                     ; Value                     ;
++---------------------------------------------+---------------------------+
+; Device power characteristics                ; Typical                   ;
+;                                             ;                           ;
+; Voltages                                    ;                           ;
+;     VCC                                     ; 1.10 V                    ;
+;     VCCA_FPLL                               ; 2.50 V                    ;
+;     VCCPGM                                  ; 1.80 V                    ;
+;     VCCBAT                                  ; 1.20 V                    ;
+;     VCCE_GXB                                ; 1.10 V                    ;
+;     VCCL_GXB                                ; 1.10 V                    ;
+;     VCCH_GXB                                ; 2.50 V                    ;
+;     VCCAUX                                  ; 2.50 V                    ;
+;     2.5 V I/O Standard                      ; 2.5 V                     ;
+;                                             ;                           ;
+; Auto computed junction temperature          ; 26.7 degrees Celsius      ;
+;     Ambient temperature                     ; 25.0 degrees Celsius      ;
+;     Junction-to-Case thermal resistance     ; 4.20 degrees Celsius/Watt ;
+;     Case-to-Heat Sink thermal resistance    ; 0.10 degrees Celsius/Watt ;
+;     Heat Sink-to-Ambient thermal resistance ; 3.50 degrees Celsius/Watt ;
+;                                             ;                           ;
+; Board model used                            ; None                      ;
++---------------------------------------------+---------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Block                                                                                                           ;
++------------+------------+---------------------+-----------------------------+--------------------------------+-------------------------------+
+; Block Name ; Block Type ; Total Thermal Power ; Block Thermal Dynamic Power ; Block Thermal Static Power (1) ; Routing Thermal Dynamic Power ;
++------------+------------+---------------------+-----------------------------+--------------------------------+-------------------------------+
+(1) The "Thermal Power Dissipation by Block" Table has been hidden. To show this table, please select the "Write power dissipation by block to report file" option under "PowerPlay Power Analyzer Settings".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Block Type                                                                                                                                                                           ;
++--------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+; Block Type         ; Total Thermal Power by Block Type ; Block Thermal Dynamic Power ; Block Thermal Static Power (1) ; Routing Thermal Dynamic Power ; Block Average Toggle Rate (millions of transitions / sec) ;
++--------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+; M10K block         ; 0.87 mW                           ; 0.85 mW                     ; --                             ; 0.02 mW                       ;   31.726                                                  ;
+; Combinational cell ; 0.65 mW                           ; 0.37 mW                     ; --                             ; 0.28 mW                       ;   10.130                                                  ;
+; Clock enable block ; 1.69 mW                           ; 0.00 mW                     ; --                             ; 1.69 mW                       ;  100.013                                                  ;
+; Register cell      ; 1.13 mW                           ; 0.72 mW                     ; --                             ; 0.41 mW                       ;    9.976                                                  ;
+; I/O                ; 0.50 mW                           ; 0.18 mW                     ; 0.31 mW                        ; 0.00 mW                       ;   12.540                                                  ;
+; PLL                ; 10.90 mW                          ; 10.90 mW                    ; --                             ; 0.00 mW                       ;   33.707                                                  ;
++--------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
+(1) The "Block Thermal Static Power" for all block types except Pins and the Voltage Regulator, if one exists, is part of the "Core Static Thermal Power Dissipation" value found on the PowerPlay Power Analyzer-->Summary report panel. The "Core Static Thermal Power Dissipation" also contains the thermal static power dissipated by the routing.
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Thermal Power Dissipation by Hierarchy                                                                                                                                                                                                                                                                                                                                                            ;
++---------------------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Compilation Hierarchy Node                              ; Total Thermal Power by Hierarchy (1) ; Block Thermal Dynamic Power (1) ; Block Thermal Static Power (1)(2) ; Routing Thermal Dynamic Power (1) ; Full Hierarchy Name                                                                                                                                                                    ;
++---------------------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; |WiMAX_PHY_top_verify                                   ; 15.74 mW (1.10 mW)                   ; 13.02 mW (0.66 mW)              ; 0.31 mW (0.31 mW)                 ; 2.40 mW (0.13 mW)                 ; |WiMAX_PHY_top_verify                                                                                                                                                                  ;
+;     |WiMAX_PHY_top:WiMAX_PHY_U0                         ; 14.64 mW (0.00 mW)                   ; 12.36 mW (0.00 mW)              ; --                                ; 2.28 mW (0.00 mW)                 ; |WiMAX_PHY_top_verify|WiMAX_PHY_top:WiMAX_PHY_U0                                                                                                                                       ;
+;         |PLL_50_100:PLL_inst                            ; 12.59 mW (0.00 mW)                   ; 10.90 mW (0.00 mW)              ; --                                ; 1.69 mW (0.00 mW)                 ; |WiMAX_PHY_top_verify|WiMAX_PHY_top:WiMAX_PHY_U0|PLL_50_100:PLL_inst                                                                                                                   ;
+;             |PLL_50_100_0002:pll_50_100_inst            ; 12.59 mW (0.00 mW)                   ; 10.90 mW (0.00 mW)              ; --                                ; 1.69 mW (0.00 mW)                 ; |WiMAX_PHY_top_verify|WiMAX_PHY_top:WiMAX_PHY_U0|PLL_50_100:PLL_inst|PLL_50_100_0002:pll_50_100_inst                                                                                   ;
+;                 |altera_pll:altera_pll_i                ; 12.59 mW (12.59 mW)                  ; 10.90 mW (10.90 mW)             ; --                                ; 1.69 mW (1.69 mW)                 ; |WiMAX_PHY_top_verify|WiMAX_PHY_top:WiMAX_PHY_U0|PLL_50_100:PLL_inst|PLL_50_100_0002:pll_50_100_inst|altera_pll:altera_pll_i                                                           ;
+;         |fec_encoder_wimax_phy:fec_encoder_U1           ; 0.99 mW (0.54 mW)                    ; 0.73 mW (0.27 mW)               ; --                                ; 0.27 mW (0.27 mW)                 ; |WiMAX_PHY_top_verify|WiMAX_PHY_top:WiMAX_PHY_U0|fec_encoder_wimax_phy:fec_encoder_U1                                                                                                  ;
+;             |FEC_DPR:fec_encoder_DPR                    ; 0.45 mW (0.00 mW)                    ; 0.45 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |WiMAX_PHY_top_verify|WiMAX_PHY_top:WiMAX_PHY_U0|fec_encoder_wimax_phy:fec_encoder_U1|FEC_DPR:fec_encoder_DPR                                                                          ;
+;                 |altsyncram:altsyncram_component        ; 0.45 mW (0.00 mW)                    ; 0.45 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |WiMAX_PHY_top_verify|WiMAX_PHY_top:WiMAX_PHY_U0|fec_encoder_wimax_phy:fec_encoder_U1|FEC_DPR:fec_encoder_DPR|altsyncram:altsyncram_component                                          ;
+;                     |altsyncram_6in2:auto_generated     ; 0.45 mW (0.45 mW)                    ; 0.45 mW (0.45 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |WiMAX_PHY_top_verify|WiMAX_PHY_top:WiMAX_PHY_U0|fec_encoder_wimax_phy:fec_encoder_U1|FEC_DPR:fec_encoder_DPR|altsyncram:altsyncram_component|altsyncram_6in2:auto_generated           ;
+;         |interleaver_top:interleaver_U2                 ; 0.79 mW (0.10 mW)                    ; 0.56 mW (0.04 mW)               ; --                                ; 0.23 mW (0.06 mW)                 ; |WiMAX_PHY_top_verify|WiMAX_PHY_top:WiMAX_PHY_U0|interleaver_top:interleaver_U2                                                                                                        ;
+;             |interleaver:Interleaver_inst               ; 0.16 mW (0.16 mW)                    ; 0.07 mW (0.07 mW)               ; --                                ; 0.09 mW (0.09 mW)                 ; |WiMAX_PHY_top_verify|WiMAX_PHY_top:WiMAX_PHY_U0|interleaver_top:interleaver_U2|interleaver:Interleaver_inst                                                                           ;
+;             |PPBuffer:PingPongBuffer_inst               ; 0.52 mW (0.00 mW)                    ; 0.45 mW (0.00 mW)               ; --                                ; 0.07 mW (0.00 mW)                 ; |WiMAX_PHY_top_verify|WiMAX_PHY_top:WiMAX_PHY_U0|interleaver_top:interleaver_U2|PPBuffer:PingPongBuffer_inst                                                                           ;
+;                 |SDPR:BankA                             ; 0.21 mW (0.00 mW)                    ; 0.20 mW (0.00 mW)               ; --                                ; 0.01 mW (0.00 mW)                 ; |WiMAX_PHY_top_verify|WiMAX_PHY_top:WiMAX_PHY_U0|interleaver_top:interleaver_U2|PPBuffer:PingPongBuffer_inst|SDPR:BankA                                                                ;
+;                     |altsyncram:altsyncram_component    ; 0.21 mW (0.00 mW)                    ; 0.20 mW (0.00 mW)               ; --                                ; 0.01 mW (0.00 mW)                 ; |WiMAX_PHY_top_verify|WiMAX_PHY_top:WiMAX_PHY_U0|interleaver_top:interleaver_U2|PPBuffer:PingPongBuffer_inst|SDPR:BankA|altsyncram:altsyncram_component                                ;
+;                         |altsyncram_b432:auto_generated ; 0.21 mW (0.21 mW)                    ; 0.20 mW (0.20 mW)               ; --                                ; 0.01 mW (0.01 mW)                 ; |WiMAX_PHY_top_verify|WiMAX_PHY_top:WiMAX_PHY_U0|interleaver_top:interleaver_U2|PPBuffer:PingPongBuffer_inst|SDPR:BankA|altsyncram:altsyncram_component|altsyncram_b432:auto_generated ;
+;                 |SDPR:BankB                             ; 0.21 mW (0.00 mW)                    ; 0.20 mW (0.00 mW)               ; --                                ; 0.01 mW (0.00 mW)                 ; |WiMAX_PHY_top_verify|WiMAX_PHY_top:WiMAX_PHY_U0|interleaver_top:interleaver_U2|PPBuffer:PingPongBuffer_inst|SDPR:BankB                                                                ;
+;                     |altsyncram:altsyncram_component    ; 0.21 mW (0.00 mW)                    ; 0.20 mW (0.00 mW)               ; --                                ; 0.01 mW (0.00 mW)                 ; |WiMAX_PHY_top_verify|WiMAX_PHY_top:WiMAX_PHY_U0|interleaver_top:interleaver_U2|PPBuffer:PingPongBuffer_inst|SDPR:BankB|altsyncram:altsyncram_component                                ;
+;                         |altsyncram_b432:auto_generated ; 0.21 mW (0.21 mW)                    ; 0.20 mW (0.20 mW)               ; --                                ; 0.01 mW (0.01 mW)                 ; |WiMAX_PHY_top_verify|WiMAX_PHY_top:WiMAX_PHY_U0|interleaver_top:interleaver_U2|PPBuffer:PingPongBuffer_inst|SDPR:BankB|altsyncram:altsyncram_component|altsyncram_b432:auto_generated ;
+;                 |PPBufferControl:BufferControl          ; 0.11 mW (0.11 mW)                    ; 0.06 mW (0.06 mW)               ; --                                ; 0.05 mW (0.05 mW)                 ; |WiMAX_PHY_top_verify|WiMAX_PHY_top:WiMAX_PHY_U0|interleaver_top:interleaver_U2|PPBuffer:PingPongBuffer_inst|PPBufferControl:BufferControl                                             ;
+;         |qpsk_MOD:qpsk_MOD_U3                           ; 0.10 mW (0.10 mW)                    ; 0.06 mW (0.06 mW)               ; --                                ; 0.04 mW (0.04 mW)                 ; |WiMAX_PHY_top_verify|WiMAX_PHY_top:WiMAX_PHY_U0|qpsk_MOD:qpsk_MOD_U3                                                                                                                  ;
+;         |prbs:randomizer_U0                             ; 0.16 mW (0.16 mW)                    ; 0.11 mW (0.11 mW)               ; --                                ; 0.05 mW (0.05 mW)                 ; |WiMAX_PHY_top_verify|WiMAX_PHY_top:WiMAX_PHY_U0|prbs:randomizer_U0                                                                                                                    ;
+;     |hard_block:auto_generated_inst                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |WiMAX_PHY_top_verify|hard_block:auto_generated_inst                                                                                                                                   ;
++---------------------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+(1) Value in parentheses is the power consumed at that level of hierarchy. Value not in parentheses is the power consumed at that level of hierarchy plus the power consumed by all levels of hierarchy below it.
+
+(2) The "Block Thermal Static Power" for all levels of hierarchy except the top-level hierarchy is part of the "Core Static Thermal Power Dissipation" value found on the PowerPlay Power Analyzer-->Summary report panel. The "Core Static Thermal Power Dissipation" also contains the thermal static power dissipated by the routing.
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Core Dynamic Thermal Power Dissipation by Clock Domain                                                                                                                                            ;
++------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+--------------------------+
+; Clock Domain                                                                                                                                   ; Clock Frequency (MHz) ; Total Core Dynamic Power ;
++------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+--------------------------+
+; WiMAX_PHY_top:WiMAX_PHY_U0|PLL_50_100:PLL_inst|PLL_50_100_0002:pll_50_100_inst|altera_pll:altera_pll_i|outclk_wire[0]                          ; 50.00                 ; 1.82                     ;
+; WiMAX_PHY_top:WiMAX_PHY_U0|PLL_50_100:PLL_inst|PLL_50_100_0002:pll_50_100_inst|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL_O_VCOPH0 ; 300.03                ; 0.00                     ;
+; clk_ref                                                                                                                                        ; 50.00                 ; 0.00                     ;
+; WiMAX_PHY_top:WiMAX_PHY_U0|PLL_50_100:PLL_inst|PLL_50_100_0002:pll_50_100_inst|altera_pll:altera_pll_i|outclk_wire[1]                          ; 100.00                ; 2.64                     ;
+; No clock domain                                                                                                                                ; 0.00                  ; 10.78                    ;
++------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------+--------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Current Drawn from Voltage Supplies Summary                                                                                        ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; Voltage Supply ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; VCC            ; 37.37 mA                ; 5.08 mA                   ; 32.29 mA                 ; 37.37 mA                         ;
+; VCCIO          ; 0.41 mA                 ; 0.02 mA                   ; 0.39 mA                  ; 0.41 mA                          ;
+; VCCPD          ; 0.82 mA                 ; 0.00 mA                   ; 0.81 mA                  ; 0.82 mA                          ;
+; VCCA_FPLL      ; 5.93 mA                 ; 3.88 mA                   ; 2.05 mA                  ; 5.93 mA                          ;
+; VCCPGM         ; 0.80 mA                 ; 0.00 mA                   ; 0.80 mA                  ; 0.80 mA                          ;
+; VCCBAT         ; 0.00 mA                 ; 0.00 mA                   ; 0.00 mA                  ; 0.00 mA                          ;
+; VCCE_GXB       ; 0.00 mA                 ; 0.00 mA                   ; 0.00 mA                  ; 0.00 mA                          ;
+; VCCL_GXB       ; 0.00 mA                 ; 0.00 mA                   ; 0.00 mA                  ; 0.00 mA                          ;
+; VCCH_GXB       ; 0.00 mA                 ; 0.00 mA                   ; 0.00 mA                  ; 0.00 mA                          ;
+; VCCAUX         ; 62.38 mA                ; 0.00 mA                   ; 62.38 mA                 ; 62.38 mA                         ;
++----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+(1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
+(2) Currents reported in column "Minimum Power Supply Current" do not include transient power-up currents. For transient power-up currents, see the device family datasheet, errata sheet, and/or ES guidelines document, as appropriate. 
+
+
++-----------------------------------------------------------------------------------------------+
+; VCCIO Supply Current Drawn by I/O Bank                                                        ;
++----------+---------------+---------------------+-----------------------+----------------------+
+; I/O Bank ; VCCIO Voltage ; Total Current Drawn ; Dynamic Current Drawn ; Static Current Drawn ;
++----------+---------------+---------------------+-----------------------+----------------------+
+; 1A       ; --            ; --                  ; --                    ; --                   ;
+; 2A       ; 2.5V          ; 0.05 mA             ; 0.00 mA               ; 0.05 mA              ;
+; 3A       ; 2.5V          ; 0.05 mA             ; 0.00 mA               ; 0.05 mA              ;
+; 3B       ; 2.5V          ; 0.07 mA             ; 0.02 mA               ; 0.05 mA              ;
+; 4A       ; 2.5V          ; 0.05 mA             ; 0.00 mA               ; 0.05 mA              ;
+; 5A       ; 2.5V          ; 0.05 mA             ; 0.00 mA               ; 0.05 mA              ;
+; 5B       ; 2.5V          ; 0.05 mA             ; 0.00 mA               ; 0.05 mA              ;
+; 6A       ; --            ; --                  ; --                    ; --                   ;
+; 7A       ; 2.5V          ; 0.05 mA             ; 0.00 mA               ; 0.05 mA              ;
+; 8A       ; 2.5V          ; 0.05 mA             ; 0.00 mA               ; 0.05 mA              ;
+; 9A       ; --            ; --                  ; --                    ; --                   ;
++----------+---------------+---------------------+-----------------------+----------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; VCCIO Supply Current Drawn by Voltage                                                                                             ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; VCCIO Voltage ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; 2.5V          ; 0.41 mA                 ; 0.02 mA                   ; 0.39 mA                  ; 0.41 mA                          ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+(1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
+(2) Currents reported in column "Minimum Power Supply Current" do not include transient power-up currents. For transient power-up currents, see the device family datasheet, errata sheet, and/or ES guidelines document, as appropriate. 
+
+
++-----------------------------------------------------------------------------------------------+
+; VCCPD Supply Current Drawn by I/O Bank                                                        ;
++----------+---------------+---------------------+-----------------------+----------------------+
+; I/O Bank ; VCCPD Voltage ; Total Current Drawn ; Dynamic Current Drawn ; Static Current Drawn ;
++----------+---------------+---------------------+-----------------------+----------------------+
+; 1A       ; 2.5V          ; 0.00 mA             ; 0.00 mA               ; 0.00 mA              ;
+; 2A       ; 2.5V          ; 0.10 mA             ; 0.00 mA               ; 0.10 mA              ;
+; 3A       ; 2.5V          ; 0.10 mA             ; 0.00 mA               ; 0.10 mA              ;
+; 3B       ; 2.5V          ; 0.11 mA             ; 0.00 mA               ; 0.10 mA              ;
+; 4A       ; 2.5V          ; 0.10 mA             ; 0.00 mA               ; 0.10 mA              ;
+; 5A       ; 2.5V          ; 0.10 mA             ; 0.00 mA               ; 0.10 mA              ;
+; 5B       ; 2.5V          ; 0.10 mA             ; 0.00 mA               ; 0.10 mA              ;
+; 6A       ; --            ; --                  ; --                    ; --                   ;
+; 7A       ; 2.5V          ; 0.10 mA             ; 0.00 mA               ; 0.10 mA              ;
+; 8A       ; 2.5V          ; 0.10 mA             ; 0.00 mA               ; 0.10 mA              ;
+; 9A       ; --            ; --                  ; --                    ; --                   ;
++----------+---------------+---------------------+-----------------------+----------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; VCCPD Supply Current Drawn by Voltage                                                                                             ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; VCCPD Voltage ; Total Current Drawn (1) ; Dynamic Current Drawn (1) ; Static Current Drawn (1) ; Minimum Power Supply Current (2) ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+; 2.5V          ; 0.82 mA                 ; 0.00 mA                   ; 0.81 mA                  ; 0.82 mA                          ;
++---------------+-------------------------+---------------------------+--------------------------+----------------------------------+
+(1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
+(2) Currents reported in column "Minimum Power Supply Current" do not include transient power-up currents. For transient power-up currents, see the device family datasheet, errata sheet, and/or ES guidelines document, as appropriate. 
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Confidence Metric Details                                                                                                                       ;
++----------------------------------------------------------------------------------------+-------------+------------+-------------+---------------+
+; Data Source                                                                            ; Total       ; Pin        ; Registered  ; Combinational ;
++----------------------------------------------------------------------------------------+-------------+------------+-------------+---------------+
+; Simulation (from file)                                                                 ;             ;            ;             ;               ;
+;     -- Simulation time nodes in unknown state                                          ; 0.0%        ;            ;             ;               ;
+;     -- Number of signals with Toggle Rate from Simulation                              ; 131 (14.2%) ; 8 (100.0%) ; 122 (48.8%) ; 1 (0.1%)      ;
+;     -- Number of signals with Zero toggle rate, from Simulation                        ; 30 (3.2%)   ; 0 (0.0%)   ; 30 (12.0%)  ; 0 (0.0%)      ;
+;     -- Number of signals with Static Probability from Simulation                       ; 131 (14.2%) ; 8 (100.0%) ; 122 (48.8%) ; 1 (0.1%)      ;
+;                                                                                        ;             ;            ;             ;               ;
+; Node, entity or clock assignment                                                       ;             ;            ;             ;               ;
+;     -- Number of signals with Toggle Rate from Node, entity or clock assignment        ; 5 (0.5%)    ; 0 (0.0%)   ; 0 (0.0%)    ; 5 (0.7%)      ;
+;     -- Number of signals with Static Probability from Node, entity or clock assignment ; 6 (0.6%)    ; 0 (0.0%)   ; 0 (0.0%)    ; 6 (0.9%)      ;
+;                                                                                        ;             ;            ;             ;               ;
+; Vectorless estimation                                                                  ;             ;            ;             ;               ;
+;     -- Number of signals with Toggle Rate from Vectorless estimation                   ; 782 (84.5%) ; 0 (0.0%)   ; 128 (51.2%) ; 654 (98.1%)   ;
+;     -- Number of signals with Zero toggle rate, from Vectorless estimation             ; 84 (9.1%)   ; 0 (0.0%)   ; 1 (0.4%)    ; 83 (12.4%)    ;
+;     -- Number of signals with Static Probability from Vectorless estimation            ; 781 (84.4%) ; 0 (0.0%)   ; 128 (51.2%) ; 653 (97.9%)   ;
+;                                                                                        ;             ;            ;             ;               ;
+; Default assignment                                                                     ;             ;            ;             ;               ;
+;     -- Number of signals with Toggle Rate from Default assignment                      ; 7 (0.8%)    ; 0 (0.0%)   ; 0 (0.0%)    ; 7 (1.0%)      ;
+;     -- Number of signals with Static Probability from Default assignment               ; 7 (0.8%)    ; 0 (0.0%)   ; 0 (0.0%)    ; 7 (1.0%)      ;
+;                                                                                        ;             ;            ;             ;               ;
+; Assumed 0                                                                              ;             ;            ;             ;               ;
+;     -- Number of signals with Toggle Rate assumed 0                                    ; 0 (0.0%)    ; 0 (0.0%)   ; 0 (0.0%)    ; 0 (0.0%)      ;
++----------------------------------------------------------------------------------------+-------------+------------+-------------+---------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Signal Activities                                                                                                                                   ;
++--------+------+---------------------------------------------+-----------------------------+--------------------+------------------------------------+
+; Signal ; Type ; Toggle Rate (millions of transitions / sec) ; Toggle Rate Data Source (1) ; Static Probability ; Static Probability Data Source (1) ;
++--------+------+---------------------------------------------+-----------------------------+--------------------+------------------------------------+
+(1) The "Signal Activity" Table has been hidden. To show this table, please select the "Write signal activities to report file" option under "PowerPlay Power Analyzer Settings".
+
+
++-------------------------+
+; Power Analyzer Messages ;
++-------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Power Analyzer
+    Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+    Info: Processing started: Fri Dec  6 16:04:22 2024
+Info: Command: quartus_pow --read_settings_files=on --write_settings_files=off WiMAX_veriPHY -c WiMAX_veriPHY
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (222002): Starting scan of VCD file ../netlist/dump.vcd (0 ns to End of File) for signal static probabilities and transition densities
+Info (222003): Finished scan of VCD file ../netlist/dump.vcd (0 ns to End of File) for signal static probabilities and transition densities
+Info (332104): Reading SDC File: '../cons/WiMAX_PHY_top_verify.sdc'
+Info (332110): Deriving PLL clocks
+    Info (332110): create_generated_clock -source {WiMAX_PHY_U0|PLL_inst|pll_50_100_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|refclkin} -divide_by 2 -multiply_by 12 -duty_cycle 50.00 -name {WiMAX_PHY_U0|PLL_inst|pll_50_100_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]} {WiMAX_PHY_U0|PLL_inst|pll_50_100_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL|vcoph[0]}
+    Info (332110): create_generated_clock -source {WiMAX_PHY_U0|PLL_inst|pll_50_100_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|vco0ph[0]} -divide_by 6 -duty_cycle 50.00 -name {WiMAX_PHY_U0|PLL_inst|pll_50_100_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk} {WiMAX_PHY_U0|PLL_inst|pll_50_100_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER|divclk}
+    Info (332110): create_generated_clock -source {WiMAX_PHY_U0|PLL_inst|pll_50_100_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|vco0ph[0]} -divide_by 3 -duty_cycle 50.00 -name {WiMAX_PHY_U0|PLL_inst|pll_50_100_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk} {WiMAX_PHY_U0|PLL_inst|pll_50_100_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER|divclk}
+Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
+    Info (332098): Cell: WiMAX_PHY_U0|PLL_inst|pll_50_100_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL  from: refclkin  to: fbclk
+    Info (332098): Cell: WiMAX_PHY_U0|PLL_inst|pll_50_100_inst|altera_pll_i|general[0].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
+    Info (332098): Cell: WiMAX_PHY_U0|PLL_inst|pll_50_100_inst|altera_pll_i|general[0].gpll~PLL_REFCLK_SELECT  from: clkin[0]  to: clkout
+    Info (332098): Cell: WiMAX_PHY_U0|PLL_inst|pll_50_100_inst|altera_pll_i|general[1].gpll~PLL_OUTPUT_COUNTER  from: vco0ph[0]  to: divclk
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Info (223000): Starting Vectorless Power Activity Estimation
+Warning (222013): Relative toggle rates could not be calculated because no clock domain could be identified for some nodes
+Info (223001): Completed Vectorless Power Activity Estimation
+Info (215037): Detailed signal activity file source information is not written to output Signal Activity File.
+Info (218000): Using Advanced I/O Power to simulate I/O buffers with the specified board trace model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (215049): Average toggle rate for this design is 11.194 millions of transitions / sec
+Info (215031): Total thermal power estimate for the design is 216.44 mW
+Info: Quartus Prime Power Analyzer was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 5229 megabytes
+    Info: Processing ended: Fri Dec  6 16:04:26 2024
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:03
+
+

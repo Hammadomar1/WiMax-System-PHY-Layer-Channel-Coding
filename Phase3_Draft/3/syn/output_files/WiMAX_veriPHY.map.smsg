@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at qpsk_MOD.sv(58): always construct contains both blocking and non-blocking assignments File: C:/Users/iT/Desktop/ASIC/Phase3_Draft/3/rtl/qpsk_MOD.sv Line: 58

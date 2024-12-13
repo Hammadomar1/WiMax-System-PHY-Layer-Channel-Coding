@@ -1,0 +1,37 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "prbs_pass",
+					"strict" : false
+				},
+				{
+					"name" : "fec_pass",
+					"strict" : false
+				},
+				{
+					"name" : "interleaver_pass",
+					"strict" : false
+				},
+				{
+					"name" : "modulator_pass",
+					"strict" : false
+				},
+				{
+					"name" : "reset_N",
+					"strict" : false
+				},
+				{
+					"name" : "load",
+					"strict" : false
+				},
+				{
+					"name" : "en",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

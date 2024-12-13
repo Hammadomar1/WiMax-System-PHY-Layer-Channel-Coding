@@ -1,0 +1,11 @@
+
+
+C:/Users/iT/Desktop/ASIC/Phase3_Draft/3/ip/PLL_50_100.v
+
+Dec 12 02PM:57:07>: Megafunction PLL Intel FPGA IP v23.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/iT/Desktop/ASIC/Phase3_Draft/3/ip/PLL_50_100.v
+
+Dec 12 02PM:57:17>: Megafunction PLL Intel FPGA IP v23.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted

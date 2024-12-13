@@ -1,0 +1,756 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f MIXED_VERSIONS
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/Study/FALL2024/ECNG 4104/Project/Phase3/sim
+T_opt
+!s110 1734009423
+V;B65FaoBz;V9M6CEaJoG=3
+Z2 04 16 4 work wimax_max_top_tb fast 0
+=1-00d861e238d2-675ae24e-f4-41a8
+R0
+!s12b OEM100
+Z3 !s124 OEM10U14 
+Z4 o-quiet -auto_acc_if_foreign -work work -L altera_mf -L altera_lnsim +acc
+Z5 tCvgOpt 0
+n@_opt
+OL;O;2023.3;77
+T_opt1
+!s110 1733998876
+V80KH2ZQgoZJVl]zf<omEj0
+R2
+=1-8c04ba9a6792-675ab91c-106-4f5c
+R3
+R4
+R5
+n@_opt1
+Z6 OL;O;2021.2;73
+R1
+T_opt2
+!s110 1733688031
+VZI1P?z6kk=MHMTbOVU:MC3
+R2
+=1-8c04ba9a6792-6755fadf-29-4f8c
+R3
+R4
+R5
+n@_opt2
+R6
+R1
+vFEC_DPR
+Z7 2../ip/FEC_DPR.v|../ip/PLL_50_100.v|../ip/SDPR.v
+Z8 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z9 !s110 1734009421
+!i10b 1
+!s100 TSk2LIRF_RjFkA`VWaGz^0
+IW[29hMEokoVaQigBmAo[G1
+S1
+Z10 dC:/Users/iT/Desktop/ASIC/Phase3_Draft/3/sim
+Z11 w1734008015
+8../ip/FEC_DPR.v
+F../ip/FEC_DPR.v
+!i122 392
+L0 40 89
+Z12 VDg1SIo80bB@j0V0VzS_@n1
+Z13 OL;L;2023.3;77
+r1
+!s85 0
+31
+Z14 !s108 1734009420.000000
+Z15 !s107 ../ip/SDPR.v|../ip/PLL_50_100.v|../ip/FEC_DPR.v|
+Z16 !s90 -reportprogress|300|-sv|../ip/FEC_DPR.v|../ip/PLL_50_100.v|../ip/SDPR.v|
+!i113 0
+Z17 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R5
+n@f@e@c_@d@p@r
+vfec_encoder_wimax_phy
+Z18 2../rtl/PPBuffer.sv|../rtl/PPBufferControl.sv|../rtl/WiMAX_PHY_top.sv|../rtl/fec_encoder_wimax_phy.sv|../rtl/interleaver.sv|../rtl/interleaver_top.sv|../rtl/prbs.sv|../rtl/qpsk_MOD.sv|../rtl/wimax_top_wrapper.sv
+R8
+R9
+!i10b 1
+!s100 ?h3[kJXMZd^??1H:M=SzL3
+I[o>96k2>5SIeLPd_QkN]X0
+S1
+R10
+R11
+8../rtl/fec_encoder_wimax_phy.sv
+F../rtl/fec_encoder_wimax_phy.sv
+!i122 394
+L0 7 306
+R12
+R13
+r1
+!s85 0
+31
+Z19 !s108 1734009421.000000
+Z20 !s107 ../rtl/wimax_top_wrapper.sv|../rtl/qpsk_MOD.sv|../rtl/prbs.sv|../rtl/interleaver_top.sv|../rtl/interleaver.sv|../rtl/fec_encoder_wimax_phy.sv|../rtl/WiMAX_PHY_top.sv|../rtl/PPBufferControl.sv|../rtl/PPBuffer.sv|
+Z21 !s90 -reportprogress|300|-sv|../rtl/PPBuffer.sv|../rtl/PPBufferControl.sv|../rtl/WiMAX_PHY_top.sv|../rtl/fec_encoder_wimax_phy.sv|../rtl/interleaver.sv|../rtl/interleaver_top.sv|../rtl/prbs.sv|../rtl/qpsk_MOD.sv|../rtl/wimax_top_wrapper.sv|
+!i113 0
+R17
+R5
+vinterleaver
+R18
+R8
+R9
+!i10b 1
+!s100 bj<L_gIeQBmeWGdB43=ib1
+IlUYDAfI?g?EYlHKF1hVc;0
+S1
+R10
+R11
+8../rtl/interleaver.sv
+F../rtl/interleaver.sv
+!i122 394
+L0 8 58
+R12
+R13
+r1
+!s85 0
+31
+R19
+R20
+R21
+!i113 0
+R17
+R5
+vinterleaver_top
+R18
+R8
+R9
+!i10b 1
+!s100 3d3`j2[WEb;`[Wlm@1oEB2
+I^L@]X;A=NSYo61ooYblcZ0
+S1
+R10
+R11
+8../rtl/interleaver_top.sv
+F../rtl/interleaver_top.sv
+!i122 394
+L0 8 69
+R12
+R13
+r1
+!s85 0
+31
+R19
+R20
+R21
+!i113 0
+R17
+R5
+XPackage_wimax
+2../pkg/Package_wimax.sv
+R8
+!s110 1734009420
+!i10b 1
+!s100 m3^F::Dl8L[TdUnPmJXG:1
+Ic@P@F8D]`T_MAE8Z3cH0h1
+S1
+R10
+R11
+8../pkg/Package_wimax.sv
+F../pkg/Package_wimax.sv
+!i122 391
+Z22 L0 8 0
+Vc@P@F8D]`T_MAE8Z3cH0h1
+R13
+r1
+!s85 0
+31
+R14
+!s107 ../pkg/Package_wimax.sv|
+!s90 -reportprogress|300|-sv|../pkg/Package_wimax.sv|
+!i113 0
+R17
+R5
+n@package_wimax
+vPLL_50_100
+2../ip/PLL_50_100_sim/PLL_50_100.vo
+R8
+R9
+!i10b 1
+!s100 =i=^:b<zFNko6JBm0NW^b1
+Ifk:C`zPa=;4@am8zQHhVG1
+S1
+R10
+w1734008119
+8../ip/PLL_50_100_sim/PLL_50_100.vo
+F../ip/PLL_50_100_sim/PLL_50_100.vo
+!i122 393
+L0 32 267
+R12
+R13
+r1
+!s85 0
+31
+R19
+!s107 ../ip/PLL_50_100_sim/PLL_50_100.vo|
+!s90 -reportprogress|300|-sv|../ip/PLL_50_100_sim/PLL_50_100.vo|
+!i113 0
+R17
+R5
+n@p@l@l_50_100
+vPPBuffer
+R18
+R8
+R9
+!i10b 1
+!s100 :ibFL8_8O:0acA]N4=2^f1
+I1^<oG9bBSdg8=nHZ45L?C1
+S1
+R10
+R11
+8../rtl/PPBuffer.sv
+F../rtl/PPBuffer.sv
+!i122 394
+L0 8 59
+R12
+R13
+r1
+!s85 0
+31
+R19
+R20
+R21
+!i113 0
+R17
+R5
+n@p@p@buffer
+vPPBufferControl
+R18
+R8
+R9
+!i10b 1
+!s100 kbmoBFWAVakCGhUiA@[H82
+IXT0<>;98aV0:eo>@Idn`d3
+S1
+R10
+w1734008762
+8../rtl/PPBufferControl.sv
+F../rtl/PPBufferControl.sv
+!i122 394
+L0 9 184
+R12
+R13
+r1
+!s85 0
+31
+R19
+R20
+R21
+!i113 0
+R17
+R5
+n@p@p@buffer@control
+vprbs
+R18
+R8
+Z23 DXx4 work 13 Package_wimax 0 22 c@P@F8D]`T_MAE8Z3cH0h1
+DXx4 work 12 prbs_sv_unit 0 22 K53W8blCeN:Xg77h[kEgR3
+R9
+R12
+r1
+!s85 0
+!i10b 1
+!s100 e^U[^NIPETULbVfcN3Z8a3
+I^E7`KBljYi`T=9f^g^4Gk2
+!s105 prbs_sv_unit
+S1
+R10
+Z24 w1734008760
+Z25 8../rtl/prbs.sv
+Z26 F../rtl/prbs.sv
+!i122 394
+L0 11 62
+R13
+31
+R19
+R20
+R21
+!i113 0
+R17
+R5
+Xprbs_sv_unit
+R18
+R8
+R23
+R9
+VK53W8blCeN:Xg77h[kEgR3
+r1
+!s85 0
+!i10b 1
+!s100 :eLHa4@Ho5M1kN6haRSmV2
+IK53W8blCeN:Xg77h[kEgR3
+!i103 1
+S1
+R10
+R24
+R25
+R26
+!i122 394
+Z27 L0 9 0
+R13
+31
+R19
+R20
+R21
+!i113 0
+R17
+R5
+vprbs_verify
+R8
+Z28 !s110 1733494553
+!i10b 1
+!s100 N6aa=MFRd_?XDN4L8XRSR1
+IeC0@3]D<PUbe`QLbeG[GN3
+S1
+R1
+w1733349550
+8../rtl/prbs_verify.sv
+F../rtl/prbs_verify.sv
+!i122 359
+L0 1 94
+R12
+Z29 OL;L;2021.2;73
+r1
+!s85 0
+31
+Z30 !s108 1733494553.000000
+Z31 !s107 ../rtl/qpsk_MOD.sv|../rtl/prbs_verify.sv|../rtl/prbs.sv|../rtl/interleaver_top.sv|../rtl/interleaver.sv|../rtl/fec_encoder_wimax_phy.sv|../rtl/WiMAX_PHY_top_verify.sv|../rtl/WiMAX_PHY_top.sv|../rtl/PPBufferControl.sv|../rtl/PPBuffer.sv|
+Z32 !s90 -reportprogress|300|-sv|../rtl/PPBuffer.sv|../rtl/PPBufferControl.sv|../rtl/WiMAX_PHY_top.sv|../rtl/WiMAX_PHY_top_verify.sv|../rtl/fec_encoder_wimax_phy.sv|../rtl/interleaver.sv|../rtl/interleaver_top.sv|../rtl/prbs.sv|../rtl/prbs_verify.sv|../rtl/qpsk_MOD.sv|
+!i113 0
+R17
+R5
+vprbs_verify_tb
+R8
+!s110 1733349562
+!i10b 1
+!s100 aoz6bnlNFn<MI[`RK5_Cb3
+I=OM;FQDN=cC<lRO457hdF3
+S1
+R1
+w1733349200
+8prbs_verify_tb.sv
+Fprbs_verify_tb.sv
+!i122 290
+L0 1 36
+R12
+R29
+r1
+!s85 0
+31
+!s108 1733349562.000000
+!s107 prbs_verify_tb.sv|
+!s90 -reportprogress|300|-sv|prbs_verify_tb.sv|
+!i113 0
+R17
+R5
+vqpsk_MOD
+R18
+R8
+R9
+!i10b 1
+!s100 KoU]PlC5cIZ^hI^=C9h9B1
+IY?c0goz5Ymdmalgh1ZZdF1
+S1
+R10
+R11
+8../rtl/qpsk_MOD.sv
+F../rtl/qpsk_MOD.sv
+!i122 394
+L0 9 88
+R12
+R13
+r1
+!s85 0
+31
+R19
+R20
+R21
+!i113 0
+R17
+R5
+nqpsk_@m@o@d
+vSDPR
+R7
+R8
+R9
+!i10b 1
+!s100 g=OUTD@LGgoHbf`dj`S3D0
+Iz_6GTkP9cEU1[OTSWIWH[0
+S1
+R10
+R11
+8../ip/SDPR.v
+F../ip/SDPR.v
+!i122 392
+L0 40 78
+R12
+R13
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 0
+R17
+R5
+n@s@d@p@r
+vwimax_max_top_tb
+Z33 2wimax_max_top_tb.sv
+R8
+R23
+DXx4 work 24 wimax_max_top_tb_sv_unit 0 22 J=BT9?ggQT0?Na2]Uz7GE0
+R9
+R12
+r1
+!s85 0
+!i10b 1
+!s100 RW3K[mUi@S;;HmTCWaabF3
+I[f;5nC?WD^WMI`c?:GR9;2
+!s105 wimax_max_top_tb_sv_unit
+S1
+R10
+Z34 w1734008016
+Z35 8wimax_max_top_tb.sv
+Z36 Fwimax_max_top_tb.sv
+!i122 395
+L0 10 63
+R13
+31
+R19
+Z37 !s107 wimax_max_top_tb.sv|
+Z38 !s90 -reportprogress|300|-sv|wimax_max_top_tb.sv|
+!i113 0
+R17
+R5
+Xwimax_max_top_tb_sv_unit
+R33
+R8
+R23
+R9
+VJ=BT9?ggQT0?Na2]Uz7GE0
+r1
+!s85 0
+!i10b 1
+!s100 gIbi^_dai6JX<AWf:HO`F2
+IJ=BT9?ggQT0?Na2]Uz7GE0
+!i103 1
+S1
+R10
+R34
+R35
+R36
+!i122 395
+R22
+R13
+31
+R19
+R37
+R38
+!i113 0
+R17
+R5
+vWiMAX_PHY_top
+R18
+R8
+R23
+DXx4 work 21 WiMAX_PHY_top_sv_unit 0 22 M@<iJDV5NmV:]NNOFjZnB3
+R9
+R12
+r1
+!s85 0
+!i10b 1
+!s100 ZQVEWm_b87DQC:==JZA_D1
+I[Zlb0ea;0@mLLKNmmzdWR3
+!s105 WiMAX_PHY_top_sv_unit
+S1
+R10
+R11
+Z39 8../rtl/WiMAX_PHY_top.sv
+Z40 F../rtl/WiMAX_PHY_top.sv
+!i122 394
+L0 11 121
+R13
+31
+R19
+R20
+R21
+!i113 0
+R17
+R5
+n@wi@m@a@x_@p@h@y_top
+XWiMAX_PHY_top_sv_unit
+R18
+R8
+R23
+R9
+VM@<iJDV5NmV:]NNOFjZnB3
+r1
+!s85 0
+!i10b 1
+!s100 4W`kjm9_n4=7:GhWSe;cP1
+IM@<iJDV5NmV:]NNOFjZnB3
+!i103 1
+S1
+R10
+R11
+R39
+R40
+!i122 394
+R27
+R13
+31
+R19
+R20
+R21
+!i113 0
+R17
+R5
+n@wi@m@a@x_@p@h@y_top_sv_unit
+vWiMAX_PHY_top_verify
+R8
+R8
+Z41 DXx4 work 13 Package_wimax 0 22 GSlWF:JE1bHz:T=c<6YAg0
+DXx4 work 28 WiMAX_PHY_top_verify_sv_unit 0 22 B__NDK0]An?L62`4lNB_h1
+R28
+R12
+r1
+!s85 0
+!i10b 1
+!s100 6OH>iekR5i;o`QedV[DmX0
+IGHRfaJhN7ghPLaE71U@9Y1
+!s105 WiMAX_PHY_top_verify_sv_unit
+S1
+R1
+Z42 w1733492752
+Z43 8../rtl/WiMAX_PHY_top_verify.sv
+Z44 F../rtl/WiMAX_PHY_top_verify.sv
+!i122 359
+L0 3 233
+R29
+31
+R30
+R31
+R32
+!i113 0
+R17
+R5
+n@wi@m@a@x_@p@h@y_top_verify
+XWiMAX_PHY_top_verify_sv_unit
+R8
+R8
+R41
+R28
+VB__NDK0]An?L62`4lNB_h1
+r1
+!s85 0
+!i10b 1
+!s100 QVLT]UL^[fUlfd1ZM[G@]0
+IB__NDK0]An?L62`4lNB_h1
+!i103 1
+S1
+R1
+R42
+R43
+R44
+!i122 359
+Z45 L0 1 0
+R29
+31
+R30
+R31
+R32
+!i113 0
+R17
+R5
+n@wi@m@a@x_@p@h@y_top_verify_sv_unit
+vWiMAX_PHY_top_verify_tb
+R8
+R41
+DXx4 work 31 WiMAX_PHY_top_verify_tb_sv_unit 0 22 c>oG0RF:ONC[JCQbYT45^3
+Z46 !s110 1733494554
+R12
+r1
+!s85 0
+!i10b 1
+!s100 bjU>DcdXbT0U4;K7mh3YX3
+IkaodUA9^G4]=^REdY:[?a2
+!s105 WiMAX_PHY_top_verify_tb_sv_unit
+S1
+R1
+Z47 w1733494492
+Z48 8WiMAX_PHY_top_verify_tb.sv
+Z49 FWiMAX_PHY_top_verify_tb.sv
+!i122 360
+L0 4 67
+R29
+31
+R30
+Z50 !s107 WiMAX_PHY_top_verify_tb.sv|
+Z51 !s90 -reportprogress|300|-sv|WiMAX_PHY_top_verify_tb.sv|
+!i113 0
+R17
+R5
+n@wi@m@a@x_@p@h@y_top_verify_tb
+XWiMAX_PHY_top_verify_tb_sv_unit
+R8
+R41
+R46
+Vc>oG0RF:ONC[JCQbYT45^3
+r1
+!s85 0
+!i10b 1
+!s100 Y<ko?nCBTA?P3PMR3So;03
+Ic>oG0RF:ONC[JCQbYT45^3
+!i103 1
+S1
+R1
+R47
+R48
+R49
+!i122 360
+R45
+R29
+31
+R30
+R50
+R51
+!i113 0
+R17
+R5
+n@wi@m@a@x_@p@h@y_top_verify_tb_sv_unit
+vwimax_top_wrapper
+R18
+R8
+R23
+DXx4 work 25 wimax_top_wrapper_sv_unit 0 22 j4`D62eIM]bKT`f]hKKzg0
+R9
+R12
+r1
+!s85 0
+!i10b 1
+!s100 kmgimgJTV6SJ<Vf>bPCz]3
+I79Cl2@JE9[fN7f]C0fZbE3
+!s105 wimax_top_wrapper_sv_unit
+S1
+R10
+R11
+Z52 8../rtl/wimax_top_wrapper.sv
+Z53 F../rtl/wimax_top_wrapper.sv
+!i122 394
+L0 12 212
+R13
+31
+R19
+R20
+R21
+!i113 0
+R17
+R5
+Xwimax_top_wrapper_sv_unit
+R18
+R8
+R23
+R9
+Vj4`D62eIM]bKT`f]hKKzg0
+r1
+!s85 0
+!i10b 1
+!s100 AH@Fj?i9S`@:Gae<?ONnO2
+Ij4`D62eIM]bKT`f]hKKzg0
+!i103 1
+S1
+R10
+R11
+R52
+R53
+!i122 394
+L0 10 0
+R13
+31
+R19
+R20
+R21
+!i113 0
+R17
+R5

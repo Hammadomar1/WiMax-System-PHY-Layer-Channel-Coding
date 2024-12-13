@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Thu Dec 12 15:06:12 2024
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : WiMAX_veriPHY
+Top-level Entity Name : wimax_top_wrapper
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 211
+Total pins : 8
+Total virtual pins : 0
+Total block memory bits : 704
+Total DSP Blocks : 0
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 1
+Total DLLs : 0

@@ -1,0 +1,19 @@
+
+State Machine - |wimax_top_wrapper|WiMAX_PHY_top:WiMAX_PHY_U0|interleaver_top:interleaver_U2|PPBuffer:PingPongBuffer_inst|PPBufferControl:BufferControl|state
+Name state.WRITE_B state.WRITE_A state.CLEAR state.IDLE 
+state.IDLE 0 0 0 0 
+state.CLEAR 0 0 1 1 
+state.WRITE_A 0 1 0 1 
+state.WRITE_B 1 0 0 1 
+
+State Machine - |wimax_top_wrapper|WiMAX_PHY_top:WiMAX_PHY_U0|fec_encoder_wimax_phy:fec_encoder_U1|output_state
+Name output_state.OUTPUT_IDLE output_state.Y output_state.X 
+output_state.OUTPUT_IDLE 0 0 0 
+output_state.X 1 0 1 
+output_state.Y 1 1 0 
+
+State Machine - |wimax_top_wrapper|WiMAX_PHY_top:WiMAX_PHY_U0|fec_encoder_wimax_phy:fec_encoder_U1|input_state
+Name input_state.IDLE input_state.PINGPONG input_state.BUFFERING_INPUT 
+input_state.IDLE 0 0 0 
+input_state.BUFFERING_INPUT 1 0 1 
+input_state.PINGPONG 1 1 0 

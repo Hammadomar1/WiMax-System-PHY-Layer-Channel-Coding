@@ -1,0 +1,69 @@
+IP Upgrade report for WiMAX_veriPHY
+Thu Dec 12 14:55:23 2024
+Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. IP Upgrade Summary
+  3. Successfully Upgraded IP Components
+  4. IP Upgrade Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2024  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------------------+
+; IP Upgrade Summary                                                            ;
++------------------------------+------------------------------------------------+
+; IP Components Upgrade Status ; Passed - Thu Dec 12 14:55:23 2024              ;
+; Quartus Prime Version        ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
+; Revision Name                ; WiMAX_veriPHY                                  ;
+; Top-level Entity Name        ; wimax_top_wrapper                              ;
+; Family                       ; Cyclone V                                      ;
++------------------------------+------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Successfully Upgraded IP Components                                                                                   ;
++-------------+----------------+---------+----------------------+----------------------+----------------------+---------+
+; Entity Name ; Component Name ; Version ; Original Source File ; Generation File Path ; New Source File      ; Message ;
++-------------+----------------+---------+----------------------+----------------------+----------------------+---------+
+; PLL_50_100  ; altera_pll     ; 22.1    ; ../ip/PLL_50_100.qip ; ../ip/PLL_50_100.v   ; ../ip/PLL_50_100.qip ;         ;
++-------------+----------------+---------+----------------------+----------------------+----------------------+---------+
+
+
++---------------------+
+; IP Upgrade Messages ;
++---------------------+
+Info (11902): Backing up file "../ip/PLL_50_100.v" to "../ip/PLL_50_100.BAK.v"
+Info (11837): Started upgrading IP component altera_pll with file "../ip/PLL_50_100.v"
+Info (11131): Completed upgrading IP component altera_pll with file "../ip/PLL_50_100.v"
+Info (23030): Evaluation of Tcl script c:/intelfpga_lite/23.1std/quartus/common/tcl/internal/ip_regen/ip_regen.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4875 megabytes
+    Info: Processing ended: Thu Dec 12 14:55:23 2024
+    Info: Elapsed time: 00:00:30
+    Info: Total CPU time (on all processors): 00:00:17
+
+

@@ -1,0 +1,12 @@
+Power Analyzer Status : Successful - Fri Dec  6 16:04:26 2024
+Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+Revision Name : WiMAX_veriPHY
+Top-level Entity Name : WiMAX_PHY_top_verify
+Family : Cyclone V
+Device : 5CEBA4F23C7
+Power Models : Final
+Total Thermal Power Dissipation : 216.44 mW
+Core Dynamic Thermal Power Dissipation : 15.24 mW
+Core Static Thermal Power Dissipation : 197.75 mW
+I/O Thermal Power Dissipation : 3.45 mW
+Power Estimation Confidence : Low: user provided insufficient toggle rate data
